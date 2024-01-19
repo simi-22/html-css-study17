@@ -1,6 +1,7 @@
 
 const reviewBtn = document.querySelectorAll(".review-box > div > p")
 const showReview = document.querySelectorAll(".review-box > div > div")
+const disableReview = document.querySelector(".disable-review");
 
 for(let i = 0 ; i<reviewBtn.length ; i++){
     reviewBtn[i].addEventListener('click',(function(event){filter(event)}));
@@ -14,6 +15,7 @@ const render = () => {
     showReview[3].classList.add('review-hidden');
     showReview[4].classList.add('review-hidden');
     showReview[5].classList.add('review-hidden');
+    disableReview.classList.add('show');
 }
 
 function filter(event){
@@ -54,6 +56,7 @@ const reviewCloseBtn = document.querySelectorAll(".review-box > div > div > span
 
 const reviewCloserFn = () => {
     render();
+    disableReview.classList.remove('show');
 }
 
 for (let i = 0; i < reviewCloseBtn.length; i++) {

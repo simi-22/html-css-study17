@@ -9,13 +9,58 @@
     <link href="main2.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 헤더 -->
+    <!-- 헤더 -->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img-m2/h-logo.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 260px;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      카테고리
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">프로그래밍</a></li>
+                      <li><a class="dropdown-item" href="#">데이터 사이언스</a></li>
+                      <li><a class="dropdown-item" href="#">인공지능</a></li>
+                      <li><a class="dropdown-item" href="#">디자인</a></li>
+                      <li><a class="dropdown-item" href="#">영상/3D</a></li>
+                      <li><a class="dropdown-item" href="#">일러스트</a></li>
+                    </ul>
+                 
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="찾고 싶은 강의 주제를 입력해주세요." aria-label="Search" name="enter" onkeydown="javascript:if(event.keyCode == 13)searchList();">
+                </form>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">로그인</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">가입하기</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </section>
+
+
+
+
    <!-- 메인2 -->
    <!-- 메인2 -->
 
    <section id="corp">
         <h2 class="h-dot">숫자로 증명하는 가치</h2>
         <p>전 세계 1,500개 이상의 회사와 수백만 수강생의 신뢰를 받고있습니다.</p>
-        <div class="corp-wave">
+        <div class="corp-wave bg-body-tertiary">
             <p></p>
             <p></p>
         </div>
@@ -25,7 +70,6 @@
    <section id="review">
     <h2 class="h-dot">수강후기</h2>
     <p>강의를 수강한 수강생분들의 후기입니다.</p>
-    <div>
         <div class="review-box">
             <div>
                 <p id="weasel"></p>
@@ -39,7 +83,7 @@
                 <p id="doggy"></p>
                 <div class="open-review review-hidden">
                     <h6>@doggy</h6>
-                    <p>정말 좋아요</p>
+                    <p>집에서 들을 수 있어서 편해요!</p>
                     <span>X</span>
                 </div>
             </div>
@@ -47,15 +91,15 @@
                 <p id="kitty"></p>
                 <div class="open-review review-hidden">
                     <h6>@kitty</h6>
-                    <p>정말 좋아요</p>
+                    <p>다양한 실습과제들이 도움이 됩니다</p>
                     <span>X</span>
                 </div>
             </div>
             <div>
                 <p id="baby-bird"></p>
                 <div class="open-review review-hidden">
-                    <h6>@baby bird</h6>
-                    <p>정말 좋아요</p>
+                    <h6>@baby-bird</h6>
+                    <p>추천합니다.</p>
                     <span>X</span>
                 </div>
             </div>
@@ -63,7 +107,7 @@
                 <p id="horse"></p>
                 <div class="open-review review-hidden">
                     <h6>@horse</h6>
-                    <p>정말 좋아요</p>
+                    <p>강의 퀄리티가 놀라워요!</p>
                     <span>X</span>
                 </div>
             </div>
@@ -75,8 +119,8 @@
                     <span>X</span>
                 </div>
             </div>
+            <div class="disable-review"></div>
         </div>
-    </div>
 
 </section>
 
