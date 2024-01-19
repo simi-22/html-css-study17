@@ -20,3 +20,68 @@ a, i{
     font-weight: 400;
     font-style: normal;
 }
+
+.container-fluid {
+    padding: 0px 30px ;
+    box-sizing: border-box;
+}
+nav .navbar-brand {
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+}
+nav .navbar-brand img {
+    width: 60px;
+}
+.navbar-collapse {
+    flex-grow: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.form-control {
+    width: 500px;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.btn {
+    font-size: 12px;
+    padding: 5px;
+    height: 30px;
+    background: rgb(255, 214, 161);
+    border: none;
+    color: rgb(255, 141, 6);
+    border-radius: 20px;
+}
+.btn .btn-outline-success {
+    padding: 0;
+}
+.form-control:focus {
+    border-color: rgb(255, 214, 161);
+    box-shadow: 0 0 0 0.2rem rgba(255, 214, 161, 0.5)
+}
+.form-control::placeholder {color:#ccc;}
+.form-control::-webkit-input-placeholder {color:#ccc;}
+.form-control:-ms-input-placeholder {color:#ccc;}
+@media (max-width: 590px){
+    .form-control {
+        max-width: 400px;
+    }
+}
+@media (max-width: 489px){
+    .form-control {
+        max-width: 300px;
+    }
+    #review .disable-review {
+        top: calc(50% - 260px);
+        right: calc(50% - 275px);
+        width: 550px;
+        height: 500px;
+        margin: 0 auto;
+        backdrop-filter: blur(5px);
+    }
+}
+@media (max-width: 380px) {
+    .form-control {
+        max-width: 280px;
+        padding: 10px 10px 10px 20px;
+    }
+}
