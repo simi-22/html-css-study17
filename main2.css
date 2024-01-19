@@ -1,0 +1,281 @@
+/* header */
+
+.container-fluid {
+    padding: 0px 30px ;
+    box-sizing: border-box;
+}
+nav .navbar-brand {
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+}
+nav .navbar-brand img {
+    width: 60px;
+}
+.navbar-collapse {
+    flex-grow: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.form-control {
+    width: 500px;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 5px;
+    height: 30px;
+    background: rgb(255, 214, 161);
+    border: none;
+    color: rgb(255, 141, 6);
+    border-radius: 20px;
+}
+.btn .btn-outline-success {
+    padding: 0;
+    
+}
+
+
+.form-control:focus {
+    border-color: rgb(255, 214, 161);
+    box-shadow: 0 0 0 0.2rem rgba(255, 214, 161, 0.5)
+}
+
+.form-control::placeholder {color:#ccc;}
+.form-control::-webkit-input-placeholder {color:#ccc;}
+.form-control:-ms-input-placeholder {color:#ccc;}
+
+
+/* main2 */
+#corp {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+#corp > p {
+    padding: 0 20px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+#review > p {
+    padding: 0 20px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+#corp .corp-wave {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: rgb(234, 234, 234);
+    box-sizing: border-box;
+}
+#corp .corp-wave p:first-of-type {
+    height: 80px;
+    margin-top: 50px;
+    background: url(./img-m2/corp1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: wave-corps1 100s linear infinite;
+}
+
+#corp .corp-wave p:nth-of-type(2) {
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background: url(./img-m2/corp2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: wave-corps2 100s linear infinite;
+}
+
+
+#review {
+    position: relative;
+    max-width: 1500px;
+    margin: o auto;
+    padding: 70px 0;
+    text-align: center;
+    background-color: rgb(255, 214, 161);
+}
+#review > div{
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#review .disable-review {
+    display: none;
+    position: absolute;
+    top: calc(50% - 175px);
+    right: calc(50% - 275px);
+    width: 550px;
+    height: 350px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+}
+#review .review-box {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+#review .review-box > div > p:first-of-type {
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#review .review-box > div > p:first-of-type:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    filter: none;
+}
+
+
+#review .review-box > div:nth-of-type(1) > p {
+    background: url(./img-m2/review1p.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#review .review-box > div:nth-of-type(2) > p {
+    background: url(./img-m2/review2p.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#review .review-box > div:nth-of-type(3) > p {
+    background: url(./img-m2/review3p.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#review .review-box > div:nth-of-type(4) > p {
+    background: url(./img-m2/review4p.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#review .review-box > div:nth-of-type(5) > p {
+    background: url(./img-m2/review5p.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#review .review-box > div:nth-of-type(6) > p {
+    background: url(./img-m2/review6p.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#review .review-box > div div {
+    position: absolute;
+    top: calc(50% - 112px);
+    left: calc(50% - 175px);
+    width: 350px;
+    height: 225px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    z-index: 100;
+}
+
+
+#review .review-box .open-review h6{
+    font-size: 30px;
+    color: rgb(17, 172, 255);
+}
+#review .review-box .open-review span{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+}
+#review .review-box .open-review span:hover{
+    color: rgb(255, 214, 161);
+}
+
+.review-hidden {
+    display: none;
+}
+
+.h-dot{
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+}
+.h-dot::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 147, 6);
+}
+
+.show {
+    display: block !important;
+}
+
+
+@keyframes wave-corps1{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -3000px;
+    }
+}
+
+@keyframes wave-corps2{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 3000px;
+    }
+}
+
+
+@media (max-width: 590px){
+    .form-control {
+        max-width: 400px; 
+    }
+    
+}
+@media (max-width: 489px){
+    .form-control {
+        max-width: 300px; 
+    }
+    #review .disable-review {
+        top: calc(50% - 260px);
+        right: calc(50% - 275px);
+        width: 550px;
+        height: 500px;
+        margin: 0 auto;
+        backdrop-filter: blur(5px);
+    }
+    
+}
+@media (max-width: 380px) {
+    .form-control {
+        max-width: 280px;
+        padding: 10px 10px 10px 20px;
+    }
+}
+
