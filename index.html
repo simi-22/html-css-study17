@@ -1,17 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
-</head>
-<body>
-   <!-- 코드작성 -->
-   <!-- 깃허브 너무 무섭다.. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <link href="main1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-   <p>main2 PR</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item c-item active">
+              <div class="d-block w-100 c-img">
+                <img
+                  src="https://img-c.udemycdn.com/course/750x422/4077322_a979_4.jpg"
+                  class="c-inside-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <div class="d-block w-100 c-img">
+                <img
+                  src="https://omegadigitalsolutions.com/pteelroa/2022/07/header-youtube.png"
+                  class="c-inside-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <div class="d-block w-100 c-img">
+                <img
+                  src="https://i.ytimg.com/vi/4v52lmRgvK4/maxresdefault.jpg"
+                  class="c-inside-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class = "mmm-box-1">
+      <div>
+        <div class ="search-bar-main-1">
+          <div>
+          <input type="text" placeholder="듣고 싶은 강의 검색해주세요." class ="main1-input-box1">
+          <button class ="main1-search-icon">
+              <i class="bi bi-search"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메인1 -->
+    <div>
+      <div>
+        <div class = "hey-mid">
+          <h2>
+            Udemy 강의 모음
+          </h2>
+          <p>
+            전세계에서 가장 유망한 Udemy에서 추천 하는 개발자공부를 위한 추천 강의
+          </p>
+        </div>
+      </div>
+      <div id="carouselExample" class="carousel slide d-none d-sm-block">
+        <div class="carousel-inner main1-ccc">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/750x422/625204_436a_3.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">【한글자막】 The Web Developer 부트캠프 2024</h5>
+                  <p class="card-text">
+                    전세계 25만명이 선택한 유데미 베스트셀러! HTML, CSS, JavaScript, Node.js 등을 활용한 13개 이상의 프로젝트로 확실하게 웹 개발 입문 완성
+                  </p>
+                  <a href="#" class="btn btn-primary ">강의듣기</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/750x422/1565838_e54e_18.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Complete 2024 Web Development Bootcamp</h5>
+                  <p class="card-text">
+                    Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-b.udemycdn.com/course/750x422/4471614_361e_5.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Ultimate React Course 2024: React, Redux & More</h5>
+                  <p class="card-text">
+                    Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-b.udemycdn.com/course/480x270/1879018_95b6_3.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Node.js, Express, MongoDB & More: The Complete Bootcamp 2024</h5>
+                  <p class="card-text">
+                    Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLE7XdsEhdmMLUNFmPGJgotR15Ki6N6GisoAUUVrO73n6C_SUj6dVz8yg7umR9Xqt30I&usqp=CAU" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">ISTQB Foundation Level preparation course+1000quiz examples</h5>
+                  <p class="card-text">
+                    The easiest preparation for certification ISTQB Certified Tester Foundation Level (CTFL) 2018 v3.1 and 2023 v4.0 [NEW!]
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/480x270/3173974_b870_4.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">C Programming Bootcamp - The Complete C Language Course
+                  </h5>
+                  <p class="card-text">
+                    C Programming 2023: Master the Fundamentals of C Programming Language. Join the Comprehensive C Bootcamp Masterclass!
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleSmallScreen" class="carousel slide d-sm-none">
+        <div class="carousel-inner main1-ccc">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/750x422/625204_436a_3.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">【한글자막】 The Web Developer 부트캠프 2024</h5>
+                  <p class="card-text">
+                    전세계 25만명이 선택한 유데미 베스트셀러! 13개 이상의 프로젝트로 확실하게 웹 개발 입문 완성
+                  </p>
+                  <a href="#" class="btn btn-primary">강의 듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/750x422/1565838_e54e_18.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Complete 2024 Web Development Bootcamp</h5>
+                  <p class="card-text">
+                    Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-b.udemycdn.com/course/750x422/4471614_361e_5.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Ultimate React Course 2024: React, Redux & More</h5>
+                  <p class="card-text">
+                    Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-b.udemycdn.com/course/480x270/1879018_95b6_3.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Node.js, Express, MongoDB & More: The Complete Bootcamp 2024</h5>
+                  <p class="card-text">
+                    Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLE7XdsEhdmMLUNFmPGJgotR15Ki6N6GisoAUUVrO73n6C_SUj6dVz8yg7umR9Xqt30I&usqp=CAU" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">ISTQB Foundation Level preparation course+1000quiz examples</h5>
+                  <p class="card-text">
+                    The easiest preparation for certification ISTQB Certified Tester Foundation Level (CTFL) 2018 v3.1 and 2023 v4.0 [NEW!]
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class = "image-wrapper">
+                <img src="https://img-c.udemycdn.com/course/480x270/3173974_b870_4.jpg" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">C Programming Bootcamp - The Complete C Language Course</h5>
+                  <p class="card-text">
+                    C Programming 2023: Master the Fundamentals of C Programming Language. Join the Comprehensive C Bootcamp Masterclass!
+                  </p>
+                  <a href="#" class="btn btn-primary">강의듣기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSmallScreen" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSmallScreen" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    </div>
+    <!-- 메인2 -->
+    
+    
+    <!-- 메인3 -->
+
+
+
+
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <!-- 이 파일은 건드리지 말아주세요 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+></script>
+  </body>
 </html>
