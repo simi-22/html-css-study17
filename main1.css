@@ -1,8 +1,8 @@
 
 .search-bar-main-1 {
     text-align: center;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
 }
 
 .main1-search-icon {
@@ -15,11 +15,11 @@
 
 .main1-input-box1 {
     width: 400px;
+    height: auto;
     background-color: rgb(234, 234, 234);
     border: 1px solid rgb(234, 234, 234);
     padding: 14px 20px;
     border-radius: 28px;
-    height: auto;
     color: gray;
 }
 
@@ -60,7 +60,7 @@
 }   
 
 .c-inside-img {
-    max-height: 300px;
+    max-height: 500px;
     width: 759px;
     background-color: rgb(242, 242, 242);
 }
@@ -69,20 +69,27 @@
     .c-inside-img {
        height: 100%;
        width: 100%;
-    
    }
 }   
+
 .c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
-    text-align: center;
     background-color: rgb(242, 242, 242);
+    text-align:center;
 }
 
 .c-item {
-    height: 300px;
+    height: 500px;
 }
+
+@media screen and (max-width: 48rem){
+    .c-item {
+       height: 300px;
+       width: 100%;
+   }
+}   
 
 .card{
     border: none;
@@ -129,4 +136,8 @@
     background-color: rgb(255, 214, 161);
     border: 1px solid rgb(255, 214, 161);
     color: white;
+}
+
+.card-body:hover > .btn-primary {
+	background-color: rgb(249, 157, 36);
 }
